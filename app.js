@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function(req, res){
-    res.send('Hello');
-});
+app.use(express.static('public'));
 
 app.listen(3000, function(){
    console.log('Express listening on port 3000');
 });
+
